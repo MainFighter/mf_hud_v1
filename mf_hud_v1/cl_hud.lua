@@ -158,10 +158,6 @@ function DrawHUD()
 		DrawPlayerSteamID()
 	end
 
-	if HUD.PlayerAvatar then
-		DrawPlayerAvatar()
-    end
-
 	if HUD.Health then
 		DrawHealth()
 	end
@@ -182,3 +178,6 @@ function DrawHUD()
 end
 
 hook.Add("HUDPaint", "DrawHUD", DrawHUD)
+if HUD.PlayerAvatar then
+	hook.Add("InitPostEntity", "DrawPlayerAvatar", function() DrawPlayerAvatar() end)
+end
