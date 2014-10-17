@@ -10,8 +10,8 @@
 	HUD Settings
 ==============================================================*/
 local HUD = {}
--- True = Disable
--- False = Enable
+-- true = Enable
+-- false = Disable
 HUD.Background = true -- Disables drawing of background
 HUD.PlayerName = true -- Disables drawing of PlayerName
 HUD.SteamID = false -- Disables drawing of SteamID, It will be placed in the bottom right hand corner of the players screen
